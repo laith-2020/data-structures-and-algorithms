@@ -12,7 +12,11 @@ returns a new array of each of those numbers raised to the 3rd power
 
 const raisedToTheThird = (arr) => {
   // Solution code here...
-  
+  var newArr = [];
+    arr.forEach(element => {
+      newArr.push(Math.pow(element,3))
+    });
+    return newArr;
 
 }
 //   test('It should append without modifying the oiginal', () => {
@@ -24,14 +28,23 @@ const raisedToTheThird = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
+Write a function that appends ' The end.' to a string, and returns
+ the modified string. The original source string should not be 
+ modified.
 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
   // Solution code here...
+  var myString = str;
+  myString = myString +' The end.';
+    return myString;
 };
+// test('It should append by modifying the oiginal', () => {
+//   const a = ['Yes', 'it', 'is'];
+//   appendFirstToLast(a);
 
+//   expect(a).toStrictEqual(['Yes', 'it', 'is', 'Yes']);
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -47,6 +60,8 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   // Solution code here...
+  var lastE = arr[0];
+  arr.push(lastE);
 };
 
 /* ------------------------------------------------------------------------------------------------
