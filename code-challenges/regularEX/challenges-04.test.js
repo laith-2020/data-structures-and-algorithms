@@ -23,20 +23,26 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const generateSubmitButton = () => {
-    // Solution code here...
-}
+        // Solution code here...
+        let but = '<button>submit</button>';
 
-/* ------------------------------------------------------------------------------------------------
-CHALLENGE 2
+        $('form').append(but);
 
-Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
+    }
+    //   test('It should add a submit button to the DOM', () => {
+    //         generateSubmitButton();
+    //         expect($('button').text()).toStrictEqual('submit');
+    /* ------------------------------------------------------------------------------------------------
+    CHALLENGE 2
 
-For example:
-12345 returns true
-'12345' returns true
-'h3llo world' returns true
-'hello world' returns false
------------------------------------------------------------------------------------------------- */
+    Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
+
+    For example:
+    12345 returns true
+    '12345' returns true
+    'h3llo world' returns true
+    'hello world' returns false
+    ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
     // Solution code here...
